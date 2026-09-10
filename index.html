@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SARV Infotech — Projects</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap');
+
+  :root {
+    --ink: #1c2430;
+    --ink-soft: #5a6472;
+    --paper: #f7f5f0;
+    --paper-line: #dcd6c8;
+    --brass: #8a6d3b;
+    --brass-deep: #6b5228;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--paper);
+    background-image: linear-gradient(var(--paper-line) 1px, transparent 1px);
+    background-size: 100% 2.1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 4em 1.4em;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 680px;
+  }
+
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 1.2em;
+    margin-bottom: 2em;
+  }
+
+  .eyebrow {
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.25em;
+    color: var(--brass);
+    text-transform: lowercase;
+    margin-bottom: 0.6em;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  p.intro {
+    color: var(--ink-soft);
+    font-size: 1.02rem;
+    line-height: 1.7;
+    max-width: 56ch;
+    margin: 1em 0 0 0;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  a.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid var(--paper-line);
+    background: rgba(255, 255, 255, 0.45);
+    padding: 1.6em 1.8em;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+
+  a.card:hover {
+    border-color: var(--brass);
+    transform: translateX(4px);
+  }
+
+  .card-label {
+    font-family: 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: var(--brass);
+    text-transform: lowercase;
+    margin-bottom: 0.5em;
+  }
+
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.65rem;
+    margin: 0 0 0.35em 0;
+    color: var(--ink);
+  }
+
+  .card-desc {
+    font-size: 0.96rem;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .card-arrow {
+    display: inline-block;
+    margin-top: 0.9em;
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    color: var(--brass-deep);
+    letter-spacing: 0.05em;
+  }
+
+  footer {
+    margin-top: 3em;
+    padding-top: 1.4em;
+    border-top: 1px solid var(--paper-line);
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.03em;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">sarv infotech</div>
+    <h1>Project Showcase</h1>
+    <p class="intro">
+      A small collection of front-end builds — each one made with plain
+      HTML, CSS, and JavaScript. Click through to see them live.
+    </p>
+  </header>
+
+  <div class="projects">
+    <a class="card" href="todo-list.html">
+      <div class="card-label">web app</div>
+      <div class="card-title">Today's Ledger — To-Do List</div>
+      <p class="card-desc">
+        Add, edit, complete, and delete tasks. Everything saves automatically
+        to the browser, so nothing gets lost on reload.
+      </p>
+      <span class="card-arrow">view project →</span>
+    </a>
+
+    <a class="card" href="tribute.html">
+      <div class="card-label">tribute page</div>
+      <div class="card-title">A Tribute to Kim Taehyung</div>
+      <p class="card-desc">
+        A visually designed tribute page with photos, a timeline, and a
+        write-up of admirable qualities.
+      </p>
+      <span class="card-arrow">view project →</span>
+    </a>
+  </div>
+
+  <footer>
+    built and maintained on GitHub · SARV Infotech
+  </footer>
+</div>
+
+</body>
+</html>
